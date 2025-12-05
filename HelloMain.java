@@ -13,13 +13,12 @@ import java.util.Scanner;
 public class HelloMain {
     public static void main(String[] args) {
 
-    	Scanner sc = new Scanner(System.in);
+    	Scanner input = new Scanner(System.in);
     	
     	System.out.println("What is your name?");
-    	String name = sc.nextLine();
+    	String name = input.nextLine();
     	
     	System.out.println("Hello," + name + "!");
-    	
     	
     	
     }
