@@ -1,14 +1,24 @@
 package MyApplication;
 
-public class MSWord implements Executable {
+public class MSWord extends Executable {
+	
+	public MSWord(String name) {
+		this.setName(name);
+	}
+	
 	@Override
 	public void run() {
-		System.out.println("Opening MS Word...");
+		String message = "Opening MS Word...";
+		setRun(true);
+		System.out.println(message);
+
 	}
 
 	@Override
 	public void stop() {
-		System.out.println("Stopping MS Word...");
+		String message = "Stopping MS Word...";
+		setRun(false);
+		System.out.println(message);
 	}
 
 }
